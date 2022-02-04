@@ -6,64 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
-  <title>MealDB UI</title>
+  <title>MealDB Search</title>
 </head>
 
 <body>
   <header>
     <form id="form">
-      <input type="text" id="search" class="search" placeholder="Search">
+      <input type="text" id="search" class="search" placeholder="Search for a meal">
     </form>
   </header>
 
-  <main id="main">
-    <div class="meal">
-      <img
-        src="https://images.unsplash.com/photo-1609710219624-201223bd6b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
-        alt="">
+  <div class="container">
+    <h1>Meal Search</h1>
 
-      <div class="meal-info">
-        <h3>Meal Name</h3>
-      </div>
-      <div class="description">
-        <h3>Description</h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aliquam odit sed optio? Dicta voluptatem accusamus
-        facere, earum laudantium nihil?
-      </div>
-    </div>
+    <div id="result-heading"></div>
+    <div id="meals" class="meals"></div>
+    <div id="single-meal"></div>
 
-    <div class="meal">
-      <img
-        src="https://images.unsplash.com/photo-1609710219624-201223bd6b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
-        alt="">
+  </div>
 
-      <div class="meal-info">
-        <h3>Meal Name</h3>
-      </div>
-      <div class="description">
-        <h3>Description</h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aliquam odit sed optio? Dicta voluptatem accusamus
-        facere, earum laudantium nihil?
-      </div>
-    </div>
-
-    <div class="meal">
-      <img
-        src="https://images.unsplash.com/photo-1609710219624-201223bd6b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
-        alt="">
-
-      <div class="meal-info">
-        <h3>Meal Name</h3>
-      </div>
-      <div class="description">
-        <h3>Description</h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aliquam odit sed optio? Dicta voluptatem accusamus
-        facere, earum laudantium nihil?
-      </div>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
+  <script src="script.js" async defer></script>
 </body>
 
 </html>
