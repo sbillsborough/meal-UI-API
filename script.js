@@ -2,7 +2,6 @@ const search = document.getElementById("search");
 const submit = document.getElementById("submit");
 const mealsEl = document.getElementById("meals");
 const resultHeading = document.getElementById("result-heading");
-const single_mealEl = document.getElementById("single-meal");
 
 function searchMeal(e) {
   e.preventDefault();
