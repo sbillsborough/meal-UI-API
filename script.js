@@ -35,6 +35,7 @@ function searchMeal(e) {
             <h3>${meal.strMeal}</h3>
             <h5>Ingredients:</h5>
             
+            <h5>Instructions:</h5>
             <p>${meal.strInstructions}</p>
 
             </div>
