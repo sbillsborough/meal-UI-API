@@ -76,7 +76,7 @@ function addMealToDom(meal) {
       </div>`;
 }
 
-form.addEventListener("submit", searchMeal);
+submit.addEventListener("submit", searchMeal);
 mealsEl.addEventListener("click", (e) => {
   const mealInfo = e.path.find((item) => {
     if (item.classList) {
