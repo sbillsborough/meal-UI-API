@@ -7,7 +7,7 @@ const single_mealEl = document.getElementById("single-meal");
 function searchMeal(e) {
   e.preventDefault();
   // clears the single meal
-  single_mealEl.innerHTML = "";
+  mealsEl.innerHTML = "";
 
   // get the search term
   const searchTerm = search.value;
@@ -17,6 +17,9 @@ function searchMeal(e) {
   if (searchTerm.trim()) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`)
       .then((res) => res.json())
+      .then((res) => {
+        addMealToDom(res.meals[0]);
+      })
       .then((data) => {
         console.log(data);
         resultHeading.innerHTML = `<h3>You searched for '${searchTerm}'<h3>`;
@@ -26,22 +29,13 @@ function searchMeal(e) {
         } else {
           mealsEl.innerHTML = data.meals
             .map(
-              (meal) => `<div class="meal">
-            <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-            <div class="meal-info" data-mealId="${meal.idMeal}">
-            </div>
-            <div>
-
-            <h3>${meal.strMeal}</h3>
-            <h5>Ingredients:</h5>
-            
-            <h5>Instructions:</h5>
-            <p>${meal.strInstructions}</p>
-
-            </div>
-            
-            </div>
-            `
+              (meal) =>
+                `<div class="meal">
+              <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+              <div class="meal-info" data-mealId="${meal.idMeal}">
+                <h3>${meal.strMeal}</h3>
+              </div>
+            </div>`
             )
             .join("");
         }
@@ -51,16 +45,6 @@ function searchMeal(e) {
   } else {
     alert("Please enter a search value");
   }
-}
-
-// get meal by id
-function getMealById(mealId) {
-  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${searchTerm}`)
-    .then((res) => res.json())
-    .then((data) => {
-      // const meal = data.meals[0];
-      addMealToDom(res.meal[0]);
-    });
 }
 
 // add meal to DOM
@@ -79,14 +63,20 @@ function addMealToDom(meal) {
     }
   }
 
-  single_mealEl.innerHTML = `<div class="single-meal">
+  mealsEl.innerHTML = `
+      <div class="single-meal">
         <h1>${meal.strMeal}</h1>
-        <img src="${meal.strMealthumb}" alt="${meal.strMeal}">
-        </div>
+        <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+        
         <div class="single-meal-info">
-          ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ""}
-          ${meal.strArea ? `<p>${meal.strArea}</p>` : ""}
+          ${
+            meal.strCategory
+              ? `<p><strong>Category:</strong> ${meal.strCategory}</p>`
+              : ""
+          }
+          ${meal.strArea ? `<p><strong>Area:</strong> ${meal.strArea}</p>` : ""}
         </div>
+        
 
         <div class=main>
           <p>${meal.strInstructions}</p>
@@ -95,7 +85,7 @@ function addMealToDom(meal) {
             ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
           </ul>
         </div>
-        </div>`;
+      </div>`;
 }
 
 //Event Listeners
