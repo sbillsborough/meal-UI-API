@@ -1,5 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 25px 50px;
+  font-family: "Poppins", sans-serif;
+}
 
 img {
   width: 60%;
+  max-width: 300px;
+  margin: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  display: table;
+  margin: auto;
+  text-align: left;
 }
