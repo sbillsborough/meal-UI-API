@@ -22,6 +22,17 @@ body {
   color: #01233c;
 }
 
+.search::placeholder {
+  color: #636363;
+}
+
+.search:hover,
+.search:focus {
+  outline: none;
+  background-color: #ffd561;
+  border: 2px solid #0000003d;
+}
+
 img {
   border: solid 2px;
   border-radius: 15px;
