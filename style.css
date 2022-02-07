@@ -12,7 +12,19 @@ body {
   color: #01233c;
 }
 
+.search {
+  background-color: transparent;
+  border: 2px solid #0000003d;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #01233c;
+}
+
 img {
+  border: solid 2px;
+  border-radius: 15px;
   width: 60%;
   max-width: 300px;
   margin: auto;

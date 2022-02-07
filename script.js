@@ -21,7 +21,7 @@ function searchMeal(e) {
       })
       .then((data) => {
         console.log(data);
-        resultHeading.innerHTML = `<h3>You searched for '${searchTerm}'<h3>`;
+        resultHeading.innerHTML = `<h3>Your search result for '${searchTerm}' is...<h3>`;
 
         if (data.meals === null) {
           resultHeading.innerHTML = `Something went wrong. Please try again!`;
@@ -64,7 +64,7 @@ function addMealToDom(meal) {
 
   mealsEl.innerHTML = `
       <div class="single-meal">
-        <h1>${meal.strMeal}</h1>
+        <h3>${meal.strMeal}</h3>
         <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
         
         <div class="single-meal-info">
