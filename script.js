@@ -22,22 +22,6 @@ function searchMeal(e) {
       .then((data) => {
         console.log(data);
         resultHeading.innerHTML = `<h3>Your search result for '${searchTerm}' is...<h3>`;
-
-        if (data.meals === null) {
-          resultHeading.innerHTML = `Something went wrong. Please try again!`;
-        } else {
-          mealsEl.innerHTML = data.meals
-            .map(
-              (meal) =>
-                `<div class="meal">
-              <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-              <div class="meal-info" data-mealId="${meal.idMeal}">
-                <h3>${meal.strMeal}</h3>
-              </div>
-            </div>`
-            )
-            .join("");
-        }
       });
     //clear search
     search.value = "";

@@ -48,3 +48,15 @@ ul {
   margin: auto;
   text-align: left;
 }
+
+@media only screen and (max-width: 640px) {
+  .search {
+    max-width: 180px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .search {
+    max-width: 120px;
+  }
+}
