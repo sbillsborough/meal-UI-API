@@ -57,6 +57,6 @@ ul {
 
 @media only screen and (max-width: 300px) {
   .search {
-    max-width: 120px;
+    max-width: 140px;
   }
 }
