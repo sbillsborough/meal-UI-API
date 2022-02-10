@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-image: linear-gradient(to bottom right, #fde092, #c26903);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 body {
   text-align: center;
   padding: 25px 50px;
