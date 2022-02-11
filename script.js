@@ -49,7 +49,8 @@ function addMealToDom(meal) {
     }
   }
 
-  mealsEl.innerHTML = `<div class="single-meal">
+  mealsEl.innerHTML = `
+  <div class="single-meal">
         <h3>${meal.strMeal}</h3>
         <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
         
@@ -71,7 +72,8 @@ function addMealToDom(meal) {
           <h3><strong>Method:</strong></h3><p>${meal.strInstructions}
           
         </div>
-      </div>`;
+      </div>
+      `;
 }
 
 //Event Listeners

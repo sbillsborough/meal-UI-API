@@ -9,9 +9,6 @@ body {
   padding: 25px 50px;
   font-family: "Poppins", sans-serif;
   background-color: #fde092;
-  background-image: linear-gradient(to bottom right, #fde092, #c26903);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #01233c;
 }
 
@@ -21,7 +18,7 @@ body {
   border-radius: 50px;
   font-family: inherit;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1rem;
   color: #01233c;
 }
 
@@ -42,7 +39,6 @@ img {
   width: 60%;
   max-width: 300px;
   margin: auto;
-  display: block;
 }
 
 ul {
