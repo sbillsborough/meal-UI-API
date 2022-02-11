@@ -5,6 +5,8 @@
 }
 
 body {
+  display: grid;
+  place-items: center;
   text-align: center;
   padding: 25px 50px;
   font-family: "Poppins", sans-serif;
@@ -18,7 +20,7 @@ body {
   border-radius: 50px;
   font-family: inherit;
   font-size: 1rem;
-  padding: 0.55rem 1rem;
+  padding: 0.5rem 1.5rem;
   color: #01233c;
 }
 

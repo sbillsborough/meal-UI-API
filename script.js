@@ -22,7 +22,8 @@ function searchMeal(e) {
       .then((data) => {
         console.log(data);
         resultHeading.innerHTML = `<h3>Your search result for '${searchTerm}' is...<h3>`;
-      });
+      })
+      .catch((error) => alert("Sorry, that meal doesn't exist"));
     //clear search
     search.value = "";
   } else {
