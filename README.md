@@ -48,4 +48,4 @@ Thank you to https://www.themealdb.com/ for allowing the use of their API for ed
 
 ## Contact
 
-Created by [@scottybillsb](billsboroughscott@gmail.com) - feel free to contact me.
+Created by billsboroughscott@gmail.com - feel free to contact me.
