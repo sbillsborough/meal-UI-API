@@ -57,7 +57,7 @@ ul {
   background-color: #ffd561;
   border-radius: 5px;
   padding: 0.5rem;
-  box-shadow: 0.2px 0.2px #000;
+  box-shadow: 0.15px 0.15px #000;
 }
 
 @media only screen and (max-width: 640px) {
