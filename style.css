@@ -5,6 +5,7 @@
 }
 
 body {
+  object-fit: cover;
   display: grid;
   place-items: center;
   text-align: center;
@@ -50,6 +51,13 @@ ul {
   display: table;
   margin: auto;
   text-align: left;
+}
+
+.single-meal {
+  background-color: #ffd561;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0.2px 0.2px #000;
 }
 
 @media only screen and (max-width: 640px) {
