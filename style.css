@@ -54,7 +54,8 @@ ul {
 }
 
 .single-meal {
-  background-color: #ffd561;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  /* background-color: #ffd561; */
   border-radius: 5px;
   padding: 0.5rem;
   box-shadow: 0.15px 0.15px #000;
