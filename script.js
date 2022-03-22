@@ -10,7 +10,6 @@ function searchMeal(e) {
 
   // get the search term
   const searchTerm = search.value;
-  console.log(searchTerm);
 
   //check if the search input is empty
   if (searchTerm.trim()) {
@@ -20,7 +19,6 @@ function searchMeal(e) {
         addMealToDom(res.meals[0]);
       })
       .then((data) => {
-        console.log(data);
         resultHeading.innerHTML = `<h3>Your search result for '${searchTerm}' is...<h3>`;
       })
       .catch((error) => alert("Sorry, that meal doesn't exist"));
