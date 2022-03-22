@@ -46,6 +46,18 @@ img {
   margin: auto;
 }
 
+#result-heading img {
+  object-fit: cover;
+  border: solid 2px;
+  border-radius: 15px;
+  width: 70%;
+  height: 18rem;
+  width: 18rem;
+  max-height: 18rem;
+  max-width: 18rem;
+  margin: auto;
+}
+
 ul {
   list-style: none;
   display: table;
@@ -54,7 +66,7 @@ ul {
 }
 
 .single-meal {
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, #ff8f33, #ffd561);
   border-radius: 5px;
   padding: 0.5rem;
   box-shadow: 0.15px 0.15px #000;
