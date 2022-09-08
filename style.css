@@ -5,7 +5,7 @@
 }
 
 body {
-  object-fit: contain;
+  /* object-fit: contain; */
   font-family: "Poppins", sans-serif;
   background-color: var(--main-bg-color);
   color: blue;
@@ -45,6 +45,10 @@ button {
   color: #01233c;
   cursor: pointer;
   height: 3.8vw;
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 .search::placeholder {
