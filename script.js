@@ -2,6 +2,20 @@ const search = document.getElementById("search");
 const submit = document.getElementById("submit");
 const mealsEl = document.getElementById("meals");
 const resultHeading = document.getElementById("result-heading");
+const rndmMeal = document
+  .querySelector("button")
+  .addEventListener("click", randomMeal);
+
+function randomMeal() {
+  fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
+    .then((res) => res.json())
+    .then((res) => {
+      addMealToDom(res.meals[0]);
+    })
+    .then(() => {
+      resultHeading.innerHTML = `<h3>Your random meal is...</h3>`;
+    });
+}
 
 function searchMeal(e) {
   e.preventDefault();
