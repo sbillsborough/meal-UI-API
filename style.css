@@ -37,6 +37,7 @@ h3 {
   padding: 0.5rem 1.5rem;
   color: #01233c;
   margin-right: 10px;
+  height: 20px;
 }
 
 button {
@@ -48,7 +49,7 @@ button {
   padding: 0.5rem 1.5rem;
   color: #01233c;
   cursor: pointer;
-  height: 3.8vw;
+  height: 40px;
 }
 
 button:active {
