@@ -17,7 +17,6 @@ header {
 }
 
 body {
-  position: static;
   font-family: "Poppins", sans-serif;
   background-color: var(--main-bg-color);
   color: blue;
@@ -25,12 +24,13 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 h3 {
-  position: static;
+  display: flex;
 }
 
 .search {
@@ -73,9 +73,10 @@ button:active {
 }
 
 .single-meal img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 25px;
+  object-fit: fill;
 }
 
 img {
@@ -94,11 +95,16 @@ ul {
 }
 
 .single-meal {
-  position: static;
   background-image: linear-gradient(to bottom right, #e7e7e7, #d0d0d0);
   border-radius: 5px;
   padding: 0.5rem;
   box-shadow: 0.15px 0.15px #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#result-heading {
+  height: 100px;
 }
 
 @media only screen and (max-width: 640px) {
