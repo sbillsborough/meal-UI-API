@@ -89,7 +89,6 @@ function addMealToDom(meal) {
       `;
 }
 
-//Event Listeners
 submit.addEventListener("submit", searchMeal);
 
 mealsEl.addEventListener("click", (e) => {
