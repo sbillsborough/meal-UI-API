@@ -23,14 +23,13 @@ body {
   width: 100vw;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.main {
+  margin-top: 80px;
 }
 
-h3 {
-  display: flex;
+.container {
+  display: grid;
+  place-items: center;
 }
 
 .search {
@@ -72,16 +71,22 @@ button:active {
   border: 2px solid #0000003d;
 }
 
+.single-meal-info {
+  position: absolute;
+  margin-top: 60px;
+}
+
 .single-meal img {
-  width: 300px;
-  height: 300px;
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 85px;
+  width: 250px;
+  height: 250px;
   border-radius: 25px;
   object-fit: fill;
 }
 
 img {
-  position: static;
-  margin-top: 52px;
   object-fit: fill;
   width: 100vw;
   height: 80vh;
@@ -90,11 +95,12 @@ img {
 ul {
   list-style: none;
   display: table;
-  margin: auto;
   text-align: left;
+  margin-left: -40px;
 }
 
 .single-meal {
+  width: 600px;
   background-image: linear-gradient(to bottom right, #e7e7e7, #d0d0d0);
   border-radius: 5px;
   padding: 0.5rem;
