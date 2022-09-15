@@ -40,9 +40,10 @@ function searchMeal(e) {
     search.value = "";
   } else {
     alert("Please enter a search value");
-    resultHeading.innerHTML = `<img
-    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-    alt="Meal image">`;
+    resultHeading.innerHTML = `<p class="greeting">Simply search for a meal of your choice. <br><br>Or if you don't know what you fancy just hit
+    the
+    'Random
+    Meal' button and we'll do the work for you.</p>`;
   }
 }
 
