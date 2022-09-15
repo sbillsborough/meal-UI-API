@@ -22,7 +22,8 @@ body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
   width: 100vw;
-  overflow: auto;
+  height: 100vh;
+  margin: 0;
 }
 
 .main {
