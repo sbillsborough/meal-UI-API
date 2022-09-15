@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
 
 :root {
-  --main-bg-color: #ffffff;
+  --main-bg-color: #4c7972;
+  --button-color: #cfb79f;
+  --text-color: #01233c;
 }
 
 header {
@@ -9,8 +11,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border-bottom: 2px solid rgb(115, 115, 115);
+  background-color: var(--main-bg-color);
+  border-bottom: 2px solid var(--text-color);
   margin-bottom: 20px;
   width: 100vw;
   height: 60px;
@@ -19,7 +21,7 @@ header {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-bg-color);
-  color: blue;
+  color: var(--text-color);
   width: 100vw;
 }
 
@@ -29,6 +31,7 @@ body {
 
 h3 {
   max-width: 300px;
+  height: 5px;
 }
 
 .container {
@@ -37,27 +40,30 @@ h3 {
 }
 
 .search {
-  background-color: transparent;
-  border: 2px solid #0000003d;
+  background-color: var(--button-color);
   border-radius: 10px;
+  border: none;
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
-  color: #01233c;
   margin-right: 10px;
-  height: 20px;
+  height: 23.5px;
 }
 
 button {
-  background-color: transparent;
-  border: 2px solid #0000003d;
+  background-color: var(--button-color);
+  border: none;
   border-radius: 10px;
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
-  color: #01233c;
+  color: var(--text-color);
   cursor: pointer;
   height: 40px;
+}
+
+button:hover {
+  background-color: #e6ccb2;
 }
 
 button:active {
@@ -65,14 +71,13 @@ button:active {
 }
 
 .search::placeholder {
-  color: #636363;
+  color: var(--text-color);
 }
 
 .search:hover,
 .search:focus {
   outline: none;
-  background-color: #eaeaea;
-  border: 2px solid #0000003d;
+  background-color: #e6ccb2;
 }
 
 .single-meal-info {
@@ -106,7 +111,8 @@ ul {
 
 .single-meal {
   width: 600px;
-  background-image: linear-gradient(to bottom right, #e7e7e7, #d0d0d0);
+  background-image: linear-gradient(to bottom right, #cfb79f, #c8a37f);
+  color: #01233c;
   border-radius: 5px;
   padding: 0.5rem;
   box-shadow: 0.15px 0.15px #000;
