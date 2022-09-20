@@ -87,7 +87,8 @@ function addMealToDom(meal) {
           
         </div>
       </div>
-      `;
+      <div class="footer"><a href="#top">Back to the top</a>
+      </div>`;
 }
 
 submit.addEventListener("submit", searchMeal);

@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+.footer {
+  margin: 20px;
+}
+
 .main {
   margin-top: 130px;
 }
