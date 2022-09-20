@@ -7,7 +7,6 @@
 }
 
 header {
-  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +14,13 @@ header {
   border-bottom: 2px solid var(--text-color);
   margin-bottom: 20px;
   height: 60px;
+  width: 100vw;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--text-color);
-  width: 100vw;
-  height: 100vh;
   margin: 0;
 }
 
@@ -139,11 +137,11 @@ ul {
   height: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
   header {
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 100vw;
   }
 
   .main {
@@ -159,14 +157,17 @@ ul {
 
   .single-meal-info {
     margin-top: 310px;
+    margin-left: -265px;
   }
 
   .single-meal img {
+    display: flex;
+    justify-content: center;
     width: 40vw;
-    height: 40vh;
+    height: 35vh;
     border-radius: 15px;
     object-fit: fill;
     margin-top: 100px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
