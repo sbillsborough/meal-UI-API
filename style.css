@@ -144,6 +144,16 @@ ul {
     width: 100vw;
   }
 
+  .search {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+
   .main {
     margin-top: 350px;
   }
