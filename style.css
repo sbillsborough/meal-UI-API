@@ -185,3 +185,15 @@ ul {
     margin-left: 0;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .single-meal {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 280px;
+    justify-content: center;
+  }
+  .main {
+    max-width: 260px;
+  }
+}
