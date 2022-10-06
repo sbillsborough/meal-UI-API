@@ -36,6 +36,10 @@ function searchMeal(e) {
         resultHeading.innerHTML = `<h3>Your search result for '${searchTerm}' is...<h3>`;
       })
       .catch((error) => alert("Sorry, that meal doesn't exist"));
+    resultHeading.innerHTML = `<p class="greeting">Simply search for a meal of your choice. <br><br>Or if you don't know what you fancy just hit
+    the
+    'Random
+    Meal' button and we'll do the work for you.</p>`;
     //clear search
     search.value = "";
   } else {
